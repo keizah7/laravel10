@@ -11,6 +11,7 @@
         "php": "^8.1",
         "filament/filament": "^3.2",
         "guzzlehttp/guzzle": "^7.2",
+        "keizah7/laravel-blueprint-filament-addon": "dev-dev",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8"
@@ -53,6 +54,12 @@
             "@php artisan key:generate --ansi"
         ]
     },
+    "repositories": {
+        "laravel-blueprint-filament-addon": {
+            "type": "path",
+            "url": "../laravel-blueprint-filament-addon"
+        }
+    },
     "extra": {
         "laravel": {
             "dont-discover": []
@@ -60,6 +67,7 @@
     },
     "config": {
         "optimize-autoloader": true,
+
         "preferred-install": "dist",
         "sort-packages": true,
         "allow-plugins": {
@@ -67,6 +75,6 @@
             "php-http/discovery": true
         }
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true
 }
